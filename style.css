@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.leftside {
+    background-color: #080325;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.leftside .upper {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 40px;
+}
+
+.leftside .upper .logo {
+    display: flex;
+    align-items: center;
+}
+
+.leftside .upper .logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.leftside .logo .text {
+    margin-left: 10px;
+}
+
+.leftside .upper .logo h5 {
+    color: #025FC0;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.leftside .upper .logo h6 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 200;
+    padding: 2px;
+}
+
+.leftside .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #025FC0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 62px;
+}
+
+.leftside .box img {
+    width: 24px;
+    height: 24px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftside .menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 10px
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.middle .menu-item:last-child {
+    margin-bottom: 0;
+}
+
+.middle .menu-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.middle .menu-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.lower {
+    padding: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lower .settings,
+.lower .logout {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.lower .settings img,
+.lower .logout img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.rightside {
+    margin-left: 300px;
+    width: calc(100% - 300px);
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.rightside .upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #ffffff;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.welcome-text {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.subtext {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: bold
+}
+
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.space {
+    height: 10px;
+    background-color: #9B201D;
+    margin-bottom: 2px;
+}
+
+.navigation {
+    display: flex;
+    border-bottom: 1px solid #dee2e6;
+    background-color: #025FC0;
+}
+
+.nav-item {
+    padding: 10px 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.nav-item.active {
+    background-color: #003377;
+    font-weight: bold;
+}
+
+.search-bar {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.search-bar input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    font-size: 14px;
+}
+
+.rightside .middle {
+    padding: 20px;
+    background-color: #ffffff;
+    flex: 1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+}
+
+.text-content {
+    padding: 10px;
+}
+
+.text-content h3 {
+    margin: 0 0 10px;
+    font-size: 18px;
+}
+
+.text-content p {
+    margin: 0 0 5px;
+    color: #6c757d;
+}
